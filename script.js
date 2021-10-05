@@ -86,7 +86,7 @@ function loadQuiz() {
     const outputResults = document.querySelector('.results');
     outputResults.innerHTML = `<h2>Quiz Completed! Thanks for taking the quiz!</h2>
     <h3> Results: ${numCorrect} out of ${quizData.length} </h3>
-    <button id="retest"> Reload to try again </button>
+    <button id="retest"> Retest </button>
     `
     
     index = 0;
@@ -95,6 +95,7 @@ function loadQuiz() {
     submit_btn.innerHTML = 'Completed'
 
     // Take Quiz Again Button
+            // Pro tip: Could've just done <button onclick="location.reload">!!!! ;)
     const retest = document.querySelector("#retest");
     retest.addEventListener('click', () => {
         retest.style.display = 'none';
