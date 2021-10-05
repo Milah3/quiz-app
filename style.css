@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: whitblacke;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 10px solid orange; */
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    background-color: white;
+    /* background-color: rgb(42, 117, 119); */
+    box-shadow: 11px 19px 20px 1vh rgb(0,0,0, 0.2);
+    border-radius: 15px ;
+    width: 50%;
+    max-width: 100%;
+    overflow: hidden;   /* Gets rid of border corners */
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+    font-weight: bold;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+ul li label {
+    cursor: pointer;
+}
+#init {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center; */
+    width: 50%;
+    margin-top: 20vh;
+}
+
+button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    /* border-radius:0px 0px 15px 15px; */
+    /* background-color: rgb(121, 156, 50); */
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: inherit;
+}
+.title {
+    color: white;
+}
+
+button:hover {
+    background-color: #73338f;
+}
+
+.quiz-header {
+    padding: 2rem;
+}
+.results {
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    color: yellowgreen;
+}
+#retest {
+    margin-top: 10vh;
+}
+
+label {
+    padding-left: 10px;
+}
