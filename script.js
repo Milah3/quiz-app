@@ -94,13 +94,16 @@ function loadQuiz() {
     submit_btn.disabled = true;
     submit_btn.innerHTML = 'Completed'
 
-    // // Take Quiz Again Button
-    // const retest = document.querySelector("#retest");
-    // retest.addEventListener('click', () => {
-    //     retest.style.display = 'none';
-    //     document.querySelector('.quiz-container').style.display = 'block';
-    //     loadQuiz();
-    // })
+    // Take Quiz Again Button
+    const retest = document.querySelector("#retest");
+    retest.addEventListener('click', () => {
+        retest.style.display = 'none';
+        outputResults.style.display = 'none';
+        submit_btn.disabled = false;
+        submit_btn.innerHTML = 'Submit'
+        document.querySelector('.quiz-container').style.display = 'block';
+        loadQuiz();
+    })
 
     }
 
